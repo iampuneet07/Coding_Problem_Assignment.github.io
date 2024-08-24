@@ -1,0 +1,49 @@
+//1st question
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str,str1;
+    cout<<"Enter the first string: ";
+    cin>>str;
+    cout<<"Enter the second string: ";
+    cin>>str1;
+    cout<<"Concatenated string: "<<str+str1;
+    return 0;
+}
+//2nd Question
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e;
+    cout<<"Enter grade 1: ";
+    cin>>a;
+    cout<<"Enter grade 2: ";
+    cin>>b;
+    cout<<"Enter grade 3: ";
+    cin>>c;
+    cout<<"Enter grade 4: ";
+    cin>>d;
+    cout<<"Enter grade 5: ";
+    cin>>e;
+    float avg=(a+b+c+d+e)/5.0;
+    cout<<"The average grade is: "<<avg;
+    return 0;
+}
+
+//3rd question
+#include<bits/stdc++.h>
+using namespace std;
+int square(int n)
+{
+    return n*n;
+}
+int main()
+{
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    cout<<"The square of "<<n<<" is: "<<square(n);
+    return 0;
+}
