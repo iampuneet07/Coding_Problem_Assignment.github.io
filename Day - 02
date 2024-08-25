@@ -1,0 +1,110 @@
+//1st question
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x,y,z;
+    cout<<"Enter the first number: ";
+    cin>>x;
+    cout<<"Enter the second number: ";
+    cin>>y;
+    cout<<"Enter the third number: ";
+    cin>>z;
+    if(x>y and x>z)
+    {
+        cout<<"The largest number is: "<<x;
+    }
+    else if(y>x and y>z)
+    {
+        cout<<"The largest number is: "<<y;
+    }
+    else{
+        cout<<"The largest number is: "<<z;    }
+    return 0;
+}
+
+//2nd question
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int grade;
+    cout<<"Enter the score: ";
+    cin>>grade;
+    if(grade>=90 and grade<=100)
+    {
+        cout<<"Grade: A";
+    }
+    else if(grade>=80 and grade<=89)
+    {
+        cout<<"Grade: B";
+    }
+    else if(grade>=70 and grade<=79)
+    {
+        cout<<"Grade: C";
+    }
+    else if(grade>=60 and grade<=69)
+    {
+        cout<<"Grade: D";
+    }
+    else 
+    {
+        cout<<"Grade: F";
+    }
+    return 0;
+}
+
+//3rd question
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int month;
+    cout<<"Enter a number : ";
+    cin>>month;
+    switch (month)
+    {
+    case 1:
+        cout<<"The month is: January";
+        break;
+    case 2:
+        cout<<"The month is: February";
+        break;
+    case 3:
+        cout<<"The month is: March";
+        break;
+    case 4:
+        cout<<"The month is: April"; 
+        break;   
+    case 5:
+        cout<<"The month is: May";
+        break;
+    case 6:
+        cout<<"The month is: June";
+        break;
+    case 7:
+        cout<<"The month is: July";
+        break;
+    case 8:
+        cout<<"The month is: August";
+        break;
+    case 9:
+        cout<<"The month is: September";
+        break;
+    case 10:
+        cout<<"The month is: October";
+        break;
+    case 11:
+        cout<<"The month is: November";
+        break;
+    case 12:
+        cout<<"The month is: December";
+        break;
+    default:
+        break;
+    }
+    return 0;
+}
