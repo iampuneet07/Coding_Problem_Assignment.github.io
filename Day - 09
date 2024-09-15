@@ -1,0 +1,42 @@
+//Day - 09
+
+//1st question
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n=54;
+    int* ptr=&n;
+    cout<<"The value of integer is: "<<n<<endl;
+    cout<<"The value of integer by using pointer: "<<*ptr<<endl;
+    return 0;
+}
+
+//2nd question
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[]={1,2,3,4,5,6};
+    int* ptr=arr;
+    int n=sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<n;i++)
+    {
+        cout<<*(ptr+i)<<" ";
+    }
+    return 0;
+}
+
+//3rd question
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a=12;
+    int* ptr=&a;
+    int** ptr1=&ptr;
+    cout<<"The value of integer is: "<<a<<endl;
+    cout<<"The value of integer is using pointer: "<<*ptr<<endl;
+    cout<<"The value of integer is using double pointer: "<<**ptr1<<endl;
+    return 0;
+}
