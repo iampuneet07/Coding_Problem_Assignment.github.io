@@ -1,0 +1,70 @@
+//Day - 11
+
+//1st question
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int target;
+    cin>>target;
+    bool found=false;
+    for(int i=0;i<n;i++)
+    {
+        if(target==arr[i])
+        {
+            found=true;
+        }
+        else
+        {
+            found=false;
+        }
+    }
+    if(found=true)
+    {
+        cout<<"YES"<<endl;
+    }
+    else
+    {
+        cout<<"NO"<<endl;
+    }
+    return 0;
+}
+
+//2nd question
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int target;
+    cin>>target;
+    bool found=false;
+    for(int i=0;i<n;i++)
+    {
+        if(target==arr[i])
+        {
+            cout<<i+1<<endl;
+            found=true;
+            break;
+        }
+    }
+    if(!found)
+    {
+        cout<<"-1"<<endl;
+    }
+ 
+    return 0;
+}
