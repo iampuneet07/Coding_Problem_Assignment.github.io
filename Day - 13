@@ -1,0 +1,14 @@
+//Day - 13
+
+//1st question
+#include<iostream>
+using namespace std;
+int main()
+{
+    int *ptr=new int;
+    *ptr=42;
+    cout<<"Value of dynamically located integer: "<<*ptr<<endl;
+    cout<<"Memory address of dynamically allocated integer: "<<ptr<<endl;
+    delete ptr;
+    return 0;
+}
