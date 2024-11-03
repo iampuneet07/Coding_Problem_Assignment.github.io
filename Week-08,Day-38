@@ -1,0 +1,50 @@
+//Week-08,Day-38
+
+#include<bits/stdc++.h>
+using namespace std;
+class Shape{
+  public:
+  virtual double area() const=0;
+  virtual double perimeter() const=0; 
+  virtual ~Shape() {}
+};
+class Circle : public Shape {
+  private:
+  int radius;
+  public:
+  Circle(int r):radius(r) {}
+  double area() const override
+  {
+      return 3.14*radius*radius;
+  }
+  double perimeter() const override
+  {
+      return 2*3.14*radius;
+  }
+};
+class Rectangle : public Shape {
+  private:
+  int width;
+  int height;
+  public:
+  Rectangle(int w,int h):width(w),height(h) {}
+    double area() const override
+    {
+        return width*height;
+    }
+    double perimeter() const override
+    {
+         return (2*(width+height));
+    }
+};
+int main()
+{
+    Shape* circle=new Circle(5);
+    Shape* rectangle=new Rectangle(4,6);
+    cout<<"Circle Area: "<<circle->area()<<endl;
+    cout<<"Circle Perimeter: "<<circle->perimeter()<<endl;
+    
+    cout<<"Rectangle Area: "<<rectangle->area()<<endl;
+    cout<<"Rectangle Area: "<<rectangle->perimeter()<<endl;
+    return 0;
+}
