@@ -1,0 +1,52 @@
+//Week-08, Day-37
+
+#include<bits/stdc++.h>
+using namespace std;
+class Car{
+  private:
+    string brand;
+    string model;
+    int year;
+    int speed;
+    public:
+    Car(string b,string m,int y):brand(b),model(m),year(y),speed(0){}
+    void setSpeed(int s)
+    {
+        if(s>=0)
+        {
+            speed = s;
+        }
+    }
+    void increaseSpeed(int amount)
+    {
+        if(amount>0)
+        {
+            speed+=amount;
+        }
+    }
+    void decreaseSpeed(int amount)
+    {
+        if(amount>0)
+        {
+            speed-=amount;
+            if(speed<0) speed=0;
+        }
+    }
+    void displayCarDetails() const{
+        cout<<"Car Details: "<<endl;
+        cout<<"Brand: "<<brand<<endl;
+        cout<<"Model: "<<model<<endl;
+        cout<<"Year: "<<year<<endl;
+        cout<<"Current Speed: "<<speed<<" km/h"<<endl;
+    }
+};
+int main()
+{
+    Car mycar("Toyato","Fortuner",2022);
+    mycar.displayCarDetails();
+    mycar.increaseSpeed(30);
+    mycar.displayCarDetails();
+    mycar.decreaseSpeed(15);
+    mycar.displayCarDetails();
+    return 0;
+}
